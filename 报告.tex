@@ -269,7 +269,6 @@ $$ I=R^2(\frac{mg-ma}{a}) $$
 
 非理想刚体：刚体可能存在形变或不均匀质量分布。
 
-\section{现实意义}
 
 总结
 
@@ -294,6 +293,7 @@ $$ I=R^2(\frac{mg-ma}{a}) $$
 
 \subsubsection{实验结果}
 
+\subsubsection{误差来源与分析}
 
 \subsection{三线摆法}
 \subsubsection{实验方法}
@@ -303,6 +303,8 @@ $$ I=R^2(\frac{mg-ma}{a}) $$
 \subsubsection{实验数据}
 
 \subsubsection{实验结果}
+
+\subsubsection{误差来源与分析}
 
 
 \subsection{落体法}
@@ -314,6 +316,7 @@ $$ I=R^2(\frac{mg-ma}{a}) $$
 
 \subsubsection{实验结果}
 
+\subsubsection{误差来源与分析}
 
 \subsection{Blender 虚拟实验}
 \subsubsection{实验方法}
@@ -326,13 +329,35 @@ $$ I=R^2(\frac{mg-ma}{a}) $$
 
 
 \section{分析与讨论}
-\subsection{误差来源}
 
-\subsection{误差分析}
+\subsection{理论补充}
+\subsubsection{基于 LaGrange 方程的建模方法}
+假设非线性的转动惯量测定系统具有$n$个广义坐标系，那么其 LaGrange 方程为：
+$$ \frac{\text d}{\text dt}(\frac{\partial E}{\partial\overset{.}q_i})-\frac{\partial E}{\partial q_i}+\frac{\partial U}{\partial q_i}=Q_i $$
+其中$n$为系统的自由度数目，$q_i$为第$i$个广义坐标，$E$为系统的动能，$U$为系统的势能，$Q_i$为与广义坐标$q_i$对应的广义力，包括阻尼和外加激振力。
+取扭摆角$\theta$为广义坐标，代入 LaGrange 方程可得：
+$$ \frac{\text d}{\text dt}(\frac{\partial E}{\partial\overset{.}\theta})-\frac{\partial E}{\partial \theta}+\frac{\partial U}{\partial \theta}=Q $$
+
+若系统中的非线性因素是弱的，则微分方程可以表示为：
+$$ \overset{..}\theta+\omega_0^2\theta=\varepsilon f(\theta,\overset{.}\theta) $$
+其中，$\varepsilon$是小参数，$f(\theta,\overset{.}\theta)$是$\theta,\overset{.}\theta$的非线性解析函数。
+
+该方程的解可以表示为：
+$$ \theta=a(t)\cos[\omega_0t+\phi(t)] $$
+即把振幅和相位看成时间$t$的函数。该方法称为慢变参数法。
+\subsubsection{Runge-Kutta 法}
+
 
 \subsection{实验分析}
 
 
+\subsection{讨论优化}
+\subsubsection{实验样件的径向偏移}
+根据平行轴定理，径向偏移引起的转动惯量测量误差可以表示为：
+$$ \delta=\frac{\pm 2m_AL\Delta L+m_A\Delta L^2}{J_A+m_AL^2} $$
+
+其中$m_A$为实验样件A的质量，$J_A$为实验样件A关于自身中心线的转动惯量。如果$\Delta L<<L$，那么误差公式可以简化为：
+$ -2\frac{\Delta L}{L}<\delta<2\frac{\Delta L}{L} $
 \section{实验总结}
 \subsection{实验综述}
 

@@ -1,6 +1,10 @@
 %!TeX program = xelatex
 \documentclass[12pt,hyperref,a4paper,UTF8]{ctexart}
 \usepackage{zjureport}
+\usepackage{graphicx}
+\usepackage{epstopdf}
+\usepackage{subfloat}
+
 
 %%-------------------------------正文开始---------------------------%%
 \begin{document}
@@ -210,7 +214,7 @@ $$ ma = mg - T $$
 
 刚体的转动由转动牛顿第二定律描述：
 
-\tau = I \alpha
+$$  \tau = I \alpha $$
 
  $\tau=T\cdot R$是作用在刚体上的力矩；
 
@@ -277,10 +281,12 @@ $$ I=R^2(\frac{mg-ma}{a}) $$
 
 \section{实验装置}
 \subsection{硬件架构}
+本实验中主要的器材包括扭摆法器材、三线摆法器材和落体法器材。
 
+此外，我们还通过Blender建模，3D打印制造了质量与体积已知的标准元件。用于转动惯量的测定实验。
 
 \subsection{软件架构}
-
+采用Blender进行模拟，研究不规则物体与流体的转动性质。
 
 
 \section{实验操作}
@@ -309,14 +315,121 @@ $$ I=R^2(\frac{mg-ma}{a}) $$
 
 \subsection{落体法}
 \subsubsection{实验方法}
+\begin{itemize}
+    \item \textbf{加速过程}：在外力（如祛码拉力）和摩擦力矩的共同作用下，系统产生角加速度 $\alpha_1$。
+    \item \textbf{减速过程}：祛码脱落后，系统仅在摩擦力矩作用下继续转动，产生角加速度 $\alpha_2$。
+\end{itemize}
+
+系统的转动惯量 $I$ 通过下式计算：
+\begin{equation}
+    I = \frac{m r^2 (\alpha_1 + \alpha_2)}{\alpha_1 \alpha_2},
+\end{equation}
+其中：
+\begin{itemize}
+    \item $m$：砝码质量；
+    \item $r$：塔轮半径；
+    \item $\alpha_1$：加速过程的角加速度；
+    \item $\alpha_2$：减速过程的角加速度。
+\end{itemize}
 
 \subsubsection{实验步骤}
+\begin{enumerate}
+    \item \textbf{实验准备}
+    \begin{itemize}
+        \item 调整实验装置，确保水平稳定，减少外部干扰。
+        \item 安装待测刚体圆盘与祛码，测量祛码的质量 $m$ 和塔轮的半径 $r$。
+    \end{itemize}
+
+    \item \textbf{加速过程测量}
+    \begin{itemize}
+        \item 挂上砝码，释放系统，系统开始加速转动。
+        \item 测量系统完成一定圈数所需的时间 $t_1$。
+        \item 计算加速角加速度 $\alpha_1$，公式如下：
+        \begin{equation}
+            \alpha_1 = \frac{\theta}{t_1^2},
+        \end{equation}
+        其中 $\theta$ 为角位移。
+    \end{itemize}
+
+    \item \textbf{减速过程测量}
+    \begin{itemize}
+        \item 祛码脱落后，系统在摩擦力矩作用下继续转动。
+        \item 测量系统完成相同圈数所需的时间 $t_2$。
+        \item 计算减速角加速度 $\alpha_2$，公式如下：
+        \begin{equation}
+            \alpha_2 = \frac{\theta}{t_2^2}.
+        \end{equation}
+    \end{itemize}
+
+    \item \textbf{数据处理}
+    \begin{itemize}
+        \item 将测得的 $\alpha_1$ 和 $\alpha_2$ 代入转动惯量计算公式：
+        \begin{equation}
+            I = \frac{m r^2 (\alpha_1 + \alpha_2)}{\alpha_1 \alpha_2}.
+        \end{equation}
+        \item 重复实验多次，取平均值以减少实验误差。
+    \end{itemize}
+    \end{itemize}
+\end{enumerate}
 
 \subsubsection{实验数据}
+    \begin{itemize}
+        \item \textbf{牵引力不同，半径相同}
+        \begin{figure}[!t]
+            \centering
+            %\includegraphics[width=3in]{fig5}
+            \subfloat[]{
+                    \includegraphics[scale=0.33]{"Fig1.png"}}
+            \subfloat[]{
+                    \includegraphics[scale=0.33]{"Fig2.png"}}
+             \subfloat[]{
+                    \includegraphics[scale=0.33]{"Fig3.png"}}
+            \caption{r=7.66cm}
+            \label{实验组1}
+            \end{figure}
+        \item \textbf{半径相同，牵引力不同}
+        \begin{figure}[!t]
+            \centering
+            \subfloat[]{
+                    \includegraphics[scale=0.5]{"Fig4.png"}}
+            \subfloat[]{
+                    \includegraphics[scale=0.5]{"Fig5.png"}}
+            \caption{m=84.90g}
+            \label{实验组2}
+            \end{figure}
+    \end{itemize}
 
 \subsubsection{实验结果}
+    \begin{itemize}
+        \item \textbf{牵引力不同，半径相同}
+        \begin{figure}[!t]
+            \centering
+                \includegraphics[scale=0.5]{"Fig6.png"}
+            \caption{r=7.66cm}
+            \label{实验组1}
+            \end{figure}
+        \item \textbf{半径相同，牵引力不同}
+        \begin{figure}[!t]
+            \centering
+                \includegraphics[scale=0.5]{"Fig7.png"}
+            \caption{m=84.90g}
+            \label{实验组2}
+            \end{figure}
+    \end{itemize}
+
 
 \subsubsection{误差来源与分析}
+    \begin{itemize}
+        \item \textbf{主要误差来源}
+        \begin{itemize}
+            \item 启动阶段的摩擦力矩变化；
+            \item 测量时间误差。
+        \end{itemize}
+        \item \textbf{误差控制}
+        \begin{itemize}
+            \item 保持加速和减速过程的转速接近；
+            \item 使用高精度计时器记录时间。
+        \end{itemize}
 
 \subsection{Blender 虚拟实验}
 \subsubsection{实验方法}
@@ -360,9 +473,11 @@ $$ \delta=\frac{\pm 2m_AL\Delta L+m_A\Delta L^2}{J_A+m_AL^2} $$
 $ -2\frac{\Delta L}{L}<\delta<2\frac{\Delta L}{L} $
 \section{实验总结}
 \subsection{实验综述}
-
+在本实验中，小组成员通过探索扭摆法、三线摆法和落体法三种基础的转动惯量测定方法。比较了转动惯量测定方法各自的长处。同时，小组成员利用Blender平台模拟了刚体的转动过程，为今后转动惯量的测定实验提供了一定的参考和借鉴；此外，还利用理论推导与三维建模打印的方法，研究了流体等非刚体旋转时的性质，具有理论探索上的创新性与突破性。
 \subsection{不足之处}
-
+    \begin{itemize}
+        \item \textbf{}
+    \end{itemize}
 \subsection{未来展望}
 
 \section{课题总结}

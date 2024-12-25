@@ -4,6 +4,7 @@
 \usepackage{graphicx}
 \usepackage{epstopdf}
 \usepackage{subfloat}
+\usepackage{booktabs}
 
 
 %%-------------------------------正文开始---------------------------%%
@@ -316,7 +317,7 @@ $$ I=R^2(\frac{mg-ma}{a}) $$
 \subsection{落体法}
 \subsubsection{实验方法}
 \begin{itemize}
-    \item \textbf{加速过程}：在外力（如祛码拉力）和摩擦力矩的共同作用下，系统产生角加速度 $\alpha_1$。
+    \item \textbf{加速过程}：在外力（如砝码拉力）和摩擦力矩的共同作用下，系统产生角加速度 $\alpha_1$。
     \item \textbf{减速过程}：祛码脱落后，系统仅在摩擦力矩作用下继续转动，产生角加速度 $\alpha_2$。
 \end{itemize}
 
@@ -375,46 +376,199 @@ $$ I=R^2(\frac{mg-ma}{a}) $$
 \subsubsection{实验数据}
     \begin{itemize}
         \item \textbf{牵引力不同，半径相同}
-        \begin{figure}[!t]
-            \centering
-            %\includegraphics[width=3in]{fig5}
-            \subfloat[]{
-                    \includegraphics[scale=0.33]{"Fig1.png"}}
-            \subfloat[]{
-                    \includegraphics[scale=0.33]{"Fig2.png"}}
-             \subfloat[]{
-                    \includegraphics[scale=0.33]{"Fig3.png"}}
-            \caption{r=7.66cm}
-            \label{实验组1}
-            \end{figure}
+            \item $m=84.90\text g$
+            
+                \begin{table}[h!]
+                \centering
+                \begin{tabular}{cccccc}
+                \toprule
+                \textbf{周期(转)} & \textbf{1} & \textbf{2} & \textbf{3} & \textbf{4} & \textbf{5} \\
+                \midrule
+                1  & 1.696 & 1.182 & 1.553 & 1.191 \\
+                2  & 1.038 & 0.898 & 1.078 & 0.922 \\
+                3  & 0.829 & 0.762 & 0.944 & 0.762 \\
+                4  & 0.692 & 0.638 & 0.775 & 0.681 \\
+                5  & 0.630 & 0.597 & 0.682 & 0.604 \\
+                6  & 0.561 & 0.547 & 0.592 & 0.551 \\
+                7  & 0.497 & 0.490 & 0.550 & 0.460 \\
+                8  & 0.457 & 0.476 & 0.528 & 0.523 \\
+                9  & 0.442 & 0.451 & 0.495 & 0.438 \\
+                10 & 0.423 & 0.427 & 0.464 & 0.439 \\
+                11 & 0.398 & 0.405 & 0.437 & 0.419 \\
+                12 & 0.385 & 0.379 & 0.421 & 0.402 \\
+                13 & 0.369 & 0.377 & 0.406 & 0.385 \\
+                14 & 0.330 & 0.364 & 0.379 & 0.369 \\
+                15 & 0.319 & 0.347 & 0.372 & 0.342 \\
+                16 & 0.324 & 0.320 & 0.330 & 0.323 \\
+                17 & 0.320 & 0.323 & 0.323 & 0.323 \\
+                18 & 0.320 & 0.319 & 0.319 & 0.319 \\
+                19 & 0.311 & 0.315 & 0.320 & 0.317 \\
+                20 & 0.310 & 0.306 & 0.323 & 0.311 \\
+                \midrule
+                \textbf{平均值} & 0.53255 & 0.49615 & 0.56455 & 0.504 \\
+                \bottomrule
+                \end{tabular}
+                \caption{实验周期数据表2}
+                \end{table}
+
+            \item $m=59.86\text g$
+                \begin{table}[h!]
+                    \centering
+                    \begin{tabular}{cccccc}
+                    \toprule
+                    \textbf{周期(转)} & \textbf{1} & \textbf{2} & \textbf{3} & \textbf{4} & \textbf{5} \\
+                    \midrule
+                    1  & 1.637 & 1.393 & 1.720 & 2.455 \\
+                    2  & 1.134 & 1.056 & 1.197 & 1.315 \\
+                    3  & 0.927 & 0.858 & 1.085 & 0.937 \\
+                    4  & 0.801 & 0.753 & 0.908 & 0.905 \\
+                    5  & 0.705 & 0.701 & 0.805 & 0.765 \\
+                    6  & 0.667 & 0.623 & 0.745 & 0.700 \\
+                    7  & 0.615 & 0.599 & 0.679 & 0.630 \\
+                    8  & 0.558 & 0.560 & 0.552 & 0.603 \\
+                    9  & 0.544 & 0.522 & 0.621 & 0.565 \\
+                    10 & 0.517 & 0.501 & 0.557 & 0.510 \\
+                    11 & 0.495 & 0.485 & 0.513 & 0.507 \\
+                    12 & 0.462 & 0.465 & 0.505 & 0.488 \\
+                    13 & 0.443 & 0.448 & 0.484 & 0.464 \\
+                    14 & 0.440 & 0.431 & 0.466 & 0.436 \\
+                    15 & 0.426 & 0.404 & 0.448 & 0.435 \\
+                    16 & 0.412 & 0.385 & 0.434 & 0.404 \\
+                    17 & 0.392 & 0.387 & 0.404 & 0.400 \\
+                    18 & 0.385 & 0.385 & 0.386 & 0.393 \\
+                    19 & 0.375 & 0.372 & 0.385 & 0.379 \\
+                    20 & 0.369 & 0.341 & 0.386 & 0.373 \\
+                    \midrule
+                    \textbf{平均值} & 0.6152 & 0.58345 & 0.664 & 0.68285 \\
+                    \bottomrule
+                    \end{tabular}
+                    \caption{实验周期数据表3}
+                    \end{table}
+
+            \item $m=59.86\text g$
+                \begin{table}[h!]
+                    \centering
+                    \begin{tabular}{ccccc}
+                    \toprule
+                    \textbf{周期(转)} & \textbf{1} & \textbf{2} & \textbf{3} & \textbf{4} \\
+                    \midrule
+                    1  & 2.718 & 4.065 & 2.753 \\
+                    2  & 2.084 & 2.411 & 2.013 \\
+                    3  & 1.701 & 1.888 & 1.652 \\
+                    4  & 1.481 & 1.622 & 1.440 \\
+                    5  & 1.339 & 1.446 & 1.321 \\
+                    6  & 1.152 & 1.315 & 1.217 \\
+                    7  & 1.177 & 1.209 & 1.115 \\
+                    8  & 1.057 & 1.128 & 1.053 \\
+                    9  & 1.006 & 1.066 & 1.007 \\
+                    10 & 0.943 & 1.006 & 0.882 \\
+                    11 & 0.926 & 0.949 & 0.953 \\
+                    12 & 0.891 & 0.924 & 0.882 \\
+                    13 & 0.862 & 0.889 & 0.834 \\
+                    14 & 0.763 & 0.855 & 0.817 \\
+                    15 & 0.836 & 0.825 & 0.787 \\
+                    16 & 0.772 & 0.782 & 0.767 \\
+                    17 & 0.758 & 0.771 & 0.746 \\
+                    18 & 0.725 & 0.751 & 0.725 \\
+                    19 & 0.712 & 0.734 & 0.705 \\
+                    20 & 0.701 & 0.711 & 0.664 \\
+                    \midrule
+                    \textbf{总和} & 22.604 & 25.347 & 22.335 \\
+                    \bottomrule
+                    \end{tabular}
+                    \caption{实验周期数据表}
+                    \end{table}
+                    
+
         \item \textbf{半径相同，牵引力不同}
-        \begin{figure}[!t]
-            \centering
-            \subfloat[]{
-                    \includegraphics[scale=0.5]{"Fig4.png"}}
-            \subfloat[]{
-                    \includegraphics[scale=0.5]{"Fig5.png"}}
-            \caption{m=84.90g}
-            \label{实验组2}
-            \end{figure}
+            \item $r=$
+                \begin{table}[h!]
+                    \centering
+                    \begin{tabular}{ccccc}
+                    \toprule
+                    \textbf{周期(转)/s} & \textbf{1} & \textbf{2} & \textbf{3} & \textbf{4} \\
+                    \midrule
+                    1  & 1.193 & 4.194 & 1.433 & 1.280 \\
+                    2  & 0.887 & 7.940 & 0.895 & 0.862 \\
+                    3  & 0.692 & 2.215 & 0.726 & 0.700 \\
+                    4  & 0.577 & 0.980 & 0.639 & 0.580 \\
+                    5  & 0.534 & 0.760 & 0.554 & 0.531 \\
+                    6  & 0.484 & 0.645 & 0.511 & 0.484 \\
+                    7  & 0.428 & 0.576 & 0.454 & 0.425 \\
+                    8  & 0.423 & 0.520 & 0.429 & 0.425 \\
+                    9  & 0.387 & 0.447 & 0.413 & 0.382 \\
+                    10 & 0.375 & 0.434 & 0.390 & 0.380 \\
+                    11 & 0.363 & 0.418 & 0.372 & 0.358 \\
+                    12 & 0.332 & 0.390 & 0.335 & 0.338 \\
+                    13 & 0.320 & 0.377 & 0.316 & 0.315 \\
+                    14 & 0.322 & 0.360 & 0.322 & 0.323 \\
+                    15 & 0.301 & 0.339 & 0.316 & 0.321 \\
+                    16 & 0.265 & 0.317 & 0.275 & 0.293 \\
+                    17 & 0.327 & 0.317 & 0.275 & 0.293 \\
+                    \bottomrule
+                    \end{tabular}
+                    \caption{实验周期数据表4}
+                    \end{table}
+                    
+            \item $r=$
+            \begin{table}[h!]
+                \centering
+                \begin{tabular}{cccc}
+                \toprule
+                \textbf{周期(转)/s} & \textbf{1} & \textbf{2} & \textbf{3} \\
+                \midrule
+                1  & 0.949 & 1.885 & 0.957 \\
+                2  & 0.642 & 0.878 & 0.708 \\
+                3  & 0.621 & 0.664 & 0.586 \\
+                4  & 0.515 & 0.559 & 0.484 \\
+                5  & 0.464 & 0.501 & 0.464 \\
+                6  & 0.426 & 0.443 & 0.426 \\
+                7  & 0.393 & 0.419 & 0.381 \\
+                8  & 0.373 & 0.378 & 0.373 \\
+                9  & 0.349 & 0.368 & 0.348 \\
+                10 & 0.335 & 0.318 & 0.336 \\
+                11 & 0.320 & 0.315 & 0.313 \\
+                12 & 0.306 & 0.312 & 0.305 \\
+                13 & 0.272 & 0.302 & 1.501 \\
+                \bottomrule
+                \end{tabular}
+                \caption{实验周期数据表5}
+                \end{table}
+                
     \end{itemize}
 
 \subsubsection{实验结果}
     \begin{itemize}
         \item \textbf{牵引力不同，半径相同}
-        \begin{figure}[!t]
-            \centering
-                \includegraphics[scale=0.5]{"Fig6.png"}
-            \caption{r=7.66cm}
-            \label{实验组1}
-            \end{figure}
+            \begin{table}[h!]
+                \centering
+                \begin{tabular}{cccccc}
+                \toprule
+                \textbf{砝码质量/g} & \textbf{角加速度/$(\text{s}^{-2})$} & \textbf{转动惯量测定值/$(\text{kg}\cdot \text{m}^2)$} & \textbf{转动惯量理论值/$(\text{kg}\cdot \text{m}^2)$} & \textbf{相对误差} \\
+                \midrule
+                84.90 & 17.85523372 & 0.003977143 & 0.003938045 & 0.99\% \\
+                59.86 & 12.17850629 & 0.003881379 & 0.003938045 & -1.44\% \\
+                19.83 & 3.437479696 & /          & /          & / \\
+                \bottomrule
+                \end{tabular}
+                \caption{转动惯量测量实验数据}
+                \end{table}
+                
         \item \textbf{半径相同，牵引力不同}
-        \begin{figure}[!t]
-            \centering
-                \includegraphics[scale=0.5]{"Fig7.png"}
-            \caption{m=84.90g}
-            \label{实验组2}
-            \end{figure}
+            \begin{table}[h!]
+                \centering
+                \begin{tabular}{cccccc}
+                \toprule
+                \textbf{旋转半径/mm} & \textbf{角加速度/$(\text{s}^{-2})$} & \textbf{转动惯量测定值/$(\text{kg}\cdot \text{m}^2)$} & \textbf{转动惯量理论值/$(\text{kg}\cdot \text{m}^2)$} & \textbf{相对误差} \\
+                \midrule
+                15.37 & 17.85523372 & 0.003977143 & 0.003938045 & 0.99\% \\
+                20.10 & 19.53034708 & 0.003970183 & 0.003938045 & 0.82\% \\
+                25.61 & 23.80698023 & 0.003816255 & 0.003938045 & -3.09\% \\
+                \bottomrule
+                \end{tabular}
+                \caption{不同旋转半径下的转动惯量测量实验数据}
+                \end{table}
+                
     \end{itemize}
 
 
@@ -431,15 +585,136 @@ $$ I=R^2(\frac{mg-ma}{a}) $$
             \item 使用高精度计时器记录时间。
         \end{itemize}
 
-\subsection{Blender 虚拟实验}
-\subsubsection{实验方法}
+\section{拓展：流体力学转动惯量探究}
+        \subsection{理论背景:液体在匀速旋转容器中转动惯量的计算}
+        \textbf{转动惯量的定义}：对于一个连续质量分布的系统，惯性矩 $I$ 可由以下积分公式给出：  
+        $$
+        I = \int_V r^2 \,dm
+        $$  
+        其中$r$是质量元 $dm$ 到旋转轴的距离，$V$ 是物体所占的体积，$dm = \rho \, dV$，其中 $\rho$ 是密度，$dV$ 是体积元。
+        
+        \subsubsection{液体在旋转容器中的建模方法}
+        
+        假设条件为：容器是一个理想的刚性结构，且绕特定轴旋转。液体的自由表面在旋转时形成稳定的抛物面形状。液体的密度 $\rho$ 是均匀的。
+        
+        从《普通物理学实验1（H）》课程的“液体旋转实验”中，我们已经知道，液体自由表面的高度分布为： 
+        $$
+        h(r) = h_0 + \frac{\omega^2 r^2}{2g}
+        $$  
+        
+        其中$h_0$是液体中心的高度，$\omega$ 是角速度，$g$ 是重力加速度，$r$ 是到旋转轴的径向距离。
+        
+        \subsubsection{惯性矩的计算}
+        
+        液体的惯性矩 $I$ 表示为：  
+        $$
+        I = \int_V r^2 \rho \, dV
+        $$  
+        其中：  
+        $$
+        dV = r \, dr \, d\theta \, dz
+        $$  
+        代入惯性矩公式：  
+        $$
+        I = \rho \int_0^{2\pi} \int_0^{R} \int_0^{h(r)} r^2 \cdot r \, dz \, dr \, d\theta
+        $$  
+        其中 $R$ 是容器的最大半径，$h(r)$ 是自由表面的高度。
+        
+        \subsubsection{积分求解}
+        \begin{enumerate}
+        \item \textbf{对 $z$ 积分}：  
+        $$
+        \int_0^{h(r)} dz = h(r)
+        $$  
+        
+        代入，得到：  
+        $$
+        I = \rho \int_0^{2\pi} \int_0^{R} r^3 h(r) \, dr \, d\theta
+        $$  
+        
+        \item \textbf{将 $h(r)$ 代入}：  
+        $$
+        h(r) = h_0 + \frac{\omega^2 r^2}{2g}
+        $$  
+        因此：  
+        $$
+        I = \rho \int_0^{2\pi} \int_0^{R} r^3 \left( h_0 + \frac{\omega^2 r^2}{2g} \right) \, dr \, d\theta
+        $$  
+        
+        \item \textbf{分解积分}：  
+        $$
+        I = \rho \int_0^{2\pi} d\theta \left[ \int_0^{R} r^3 h_0 \, dr + \int_0^{R} r^3 \frac{\omega^2 r^2}{2g} \, dr \right]
+        $$  
+        
+        \item \textbf{计算径向积分}：  
+        对于 $\int_0^R r^3 \, dr$ 和 $\int_0^R r^5 \, dr$，我们分别得到：  
+        $$
+        \int_0^R r^3 \, dr = \frac{R^4}{4}, \quad \int_0^R r^5 \, dr = \frac{R^6}{6}
+        $$  
+        将结果代回：  
+        $$
+        I = \rho \cdot 2\pi \left[ h_0 \cdot \frac{R^4}{4} + \frac{\omega^2}{2g} \cdot \frac{R^6}{6} \right]
+        $$  
+        
+        \item \textbf{化简最终结果}：  
+        $$
+        I = \frac{\pi \rho R^4 h_0}{2} + \frac{\pi \rho \omega^2 R^6}{6g}
+        $$  
+        得到我们最终理论推导的式子，即旋转液体转动惯量和转动容器半径、角速度的关系。
+        \end{enumerate}
 
-\subsubsection{实验步骤}
-
-\subsubsection{实验数据}
-
-\subsubsection{实验结果}
-
+        \subsection{理论比较与误差分析}
+        Dodge [2]、Ibrahim [5]、Faltinsen 与 Timokha [6] 对液体阻尼的相关问题进行了全面而系统的阐述，  
+        归纳容器内液体的阻尼来自于四个方面：
+        1. 液体与容器固壁之间的边界层摩擦阻尼；
+        2. 液体内涡的黏性阻尼；
+        3. 自由表面阻尼；
+        4. 其他三维阻尼。
+        
+        一般认为液体与容器固壁之间的边界层阻尼是主要作用。  
+        对于小幅液体晃动而言，可采用无阻尼不可压缩的势流理论来研究液体晃动，采用速度势的数学模型来描述液体运动，从而可以得到液体的运动方程：
+        
+        \begin{equation}
+        \dot{q_j} + \omega_j^2 q_j = f_j(t), \quad (j = 1, 2, 3, \dots)
+        \end{equation}
+        
+        式中，$q_j$ 为液体系统的第 $j$ 阶自然频率，$\omega_j$ 为第 $j$ 阶固有频率，$f_j(t)$ 为第 $j$ 阶外力。  
+        方程(1) 表示了一个无阻尼液体系统的强迫振动方程。当需要考虑液体的晃动阻尼时，可在方程(1)上增加一个阻尼项 $2\zeta_j\omega_j \dot{q_j}$，即有：
+        
+        \begin{equation}
+        \dot{q_j} + 2\zeta_j\omega_j\dot{q_j} + \omega_j^2 q_j = f_j(t), \quad (j = 1, 2, 3, \dots)
+        \end{equation}
+        
+        式中，$\zeta_j$ 为第 $j$ 阶模态的阻尼比系数，主要由阻尼的晃动可以由公式(3)来确定。  
+        这种液体晃动阻尼可以通过边界层理论的边界层阻尼来分析。基于 Stokes 边界层理论，可得到容器的边界层阻尼的估计公式为：
+        
+        \begin{equation}
+        \zeta_b = \frac{1}{2} \sqrt{\frac{\nu}{2\omega}} \frac{\int_{\partial S} |\nabla \varphi|^2 ds}{\int_{\int V} |\nabla \varphi|^2 dv}
+        \end{equation}
+        
+        式中：
+        - $V$ 为液体空间区域；
+        - $\partial S$ 为容器的边界；
+        - $\varphi$ 表示了速度势的幅值函数；
+        - $\nu$ 为液体运动黏度；
+        - $\omega$ 为液体晃动圆频率。
+        
+        液体内涡的黏性阻尼比可以采用下列黏滞参数计算[6]：
+        
+        \begin{equation}
+        \zeta_v = \frac{\nu}{\omega} \frac{\int_{\int V} \left[ 
+        \left(\frac{\partial^2 \varphi}{\partial x^2}\right)^2 + 
+        \left(\frac{\partial^2 \varphi}{\partial y^2}\right)^2 + 
+        \left(\frac{\partial^2 \varphi}{\partial z^2}\right)^2 + 
+        2\left(\frac{\partial^2 \varphi}{\partial x \partial y}\right)^2 + 
+        2\left(\frac{\partial^2 \varphi}{\partial y \partial z}\right)^2 + 
+        2\left(\frac{\partial^2 \varphi}{\partial z \partial x}\right)^2
+        \right] dv}
+        {\int_{\int V} |\nabla \varphi|^2 dv}
+        \end{equation}
+        
+        一般认为，以上液体内部的体阻尼比相较于边界层阻尼要小得多，体阻尼可忽略不计。  
+        对于短矩形容器，根据公式(3)(4)可得到阻尼比的解析公式。对于非矩形的容器，可采用数值方法计算。
 
 \section{分析与讨论}
 
@@ -459,6 +734,47 @@ $$ \overset{..}\theta+\omega_0^2\theta=\varepsilon f(\theta,\overset{.}\theta) $
 $$ \theta=a(t)\cos[\omega_0t+\phi(t)] $$
 即把振幅和相位看成时间$t$的函数。该方法称为慢变参数法。
 \subsubsection{Runge-Kutta 法}
+\subsubsection*{Runge-Kutta法简要介绍}
+
+Runge-Kutta法（简称RK法）是一类用于数值求解常微分方程初值问题的重要算法。它通过引入多步逼近技术，在提高数值解精度的同时保持较高的计算效率，被广泛应用于科学与工程计算中，对于上文提及的 LaGrange 建模方法具有借鉴意义。
+
+\paragraph{问题形式}
+Runge-Kutta法主要用于求解以下形式的初值问题：
+\[
+\frac{dy}{dx} = f(x, y), \quad y(x_0) = y_0,
+\]
+其中，\( f(x, y) \) 是已知函数，\( y(x) \) 是待求解的函数。
+
+\paragraph{基本思想}
+RK方法通过在每一步内结合多个点的斜率（即 \( f(x, y) \) 的值）来计算步进，从而提高解的精度。最简单的RK方法（如欧拉法）只利用当前点的斜率，而高阶RK方法（如经典的四阶Runge-Kutta方法）会结合多个中间点的信息。
+
+\paragraph{经典的四阶Runge-Kutta方法}
+四阶Runge-Kutta法是最常用的RK方法之一，其公式为：
+\[
+k_1 = h f(x_n, y_n),
+\]
+\[
+k_2 = h f\left(x_n + \frac{h}{2}, y_n + \frac{k_1}{2}\right),
+\]
+\[
+k_3 = h f\left(x_n + \frac{h}{2}, y_n + \frac{k_2}{2}\right),
+\]
+\[
+k_4 = h f(x_n + h, y_n + k_3),
+\]
+\[
+y_{n+1} = y_n + \frac{1}{6}(k_1 + 2k_2 + 2k_3 + k_4),
+\]
+其中：
+\begin{itemize}
+    \item \( h \) 是步长；
+    \item \( k_1, k_2, k_3, k_4 \) 是中间斜率的加权项。
+\end{itemize}
+
+该方法利用当前点和三个中间点的斜率估算出下一点的值，具有四阶精度（即局部截断误差为 \( O(h^5) \)，全局误差为 \( O(h^4) \)）。
+
+\paragraph{总结}
+Runge-Kutta法是求解常微分方程的一种高效且精确的方法，其四阶形式因计算精度与效率的良好平衡，在实际应用中极为常见。
 
 
 \subsection{实验分析}
@@ -470,23 +786,29 @@ $$ \theta=a(t)\cos[\omega_0t+\phi(t)] $$
 $$ \delta=\frac{\pm 2m_AL\Delta L+m_A\Delta L^2}{J_A+m_AL^2} $$
 
 其中$m_A$为实验样件A的质量，$J_A$为实验样件A关于自身中心线的转动惯量。如果$\Delta L<<L$，那么误差公式可以简化为：
-$ -2\frac{\Delta L}{L}<\delta<2\frac{\Delta L}{L} $
+$$ -2\frac{\Delta L}{L}<\delta<2\frac{\Delta L}{L} $$
 \section{实验总结}
 \subsection{实验综述}
 在本实验中，小组成员通过探索扭摆法、三线摆法和落体法三种基础的转动惯量测定方法。比较了转动惯量测定方法各自的长处。同时，小组成员利用Blender平台模拟了刚体的转动过程，为今后转动惯量的测定实验提供了一定的参考和借鉴；此外，还利用理论推导与三维建模打印的方法，研究了流体等非刚体旋转时的性质，具有理论探索上的创新性与突破性。
 \subsection{不足之处}
     \begin{itemize}
-        \item \textbf{}
+        \item \textbf{三线摆法}
+        在三线摆实验部分，实际上还存在许多的改进空间，如探究摆角对于实验结果的影响，在何种摆角范围内会得到最佳的测量条件；另外，实验并没有探究悬盘偏心平动对于实验结果准确度的影响。
+        此外，实验也没有对不规则物体的转动惯量进行测量，理论来讲，可以通过悬挂法或者其他方法确定不规则物体的重心，放置于下悬盘的中心轴处就可以测量出该不规则物体的转动惯量，但是由于不规则物体的转动惯量的理论值难以计算，所以最终难以判断测量值与理论值的误差，因此并没有设计这一部分的实验。
     \end{itemize}
 \subsection{未来展望}
-
+    受限于实验仪器和实验时间不足，本次实验仍有许多可扩展的空间，期望之后可以引入高精度的计时技术，同时优化摆线材料与测量仪器，并改进测量技术，使实验结果更符合预期。通过不断的技术创新和实验优化，三线摆法将为转动惯量测量领域带来更多的突破与进步。相信在未来，三线摆法不仅将在科研和工程领域中发挥更大的作用，还将在物理教育和跨学科研究中展现出新的潜力。
 \section{课题总结}
 \subsection{仪器系统照片}
 
 \subsection{实验过程记录}
 
 \subsection{感想}
+\begin{itemize}
+    \item \textbf{何德怀}
+    通过这次为期七周的实验，对于转动惯量的研究方法有了更深刻的认识，此外，对于大型实验的实验设计、进度开展也有了更明确的规划。
 
+\end{itemize}
 
 \section{参考文献}
 
